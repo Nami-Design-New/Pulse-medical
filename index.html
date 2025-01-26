@@ -1,410 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Pulse Medical</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
 
-    <!-- Favicons -->
-    <link href="assets/img/fav.svg" rel="icon" />
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Pulse Medical</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicons -->
+  <link href="assets/img/fav.svg" rel="icon" />
 
-    <!--  CSS Files -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/bootstrap-icons.css" rel="stylesheet" />
-    <link href="assets/css/aos.css" rel="stylesheet" />
-    <link href="assets/css/glightbox.min.css" rel="stylesheet" />
-    <link href="assets/css/all.min.css" rel="stylesheet" />
-    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet" />
-    <link href="assets/css/main.css" rel="stylesheet" />
-  </head>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
 
-  <body class="index-page">
-    <header id="header" class="header d-flex align-items-center fixed-top">
-      <div
-        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
-      >
-        <a href="index.html" class="logo d-flex align-items-center">
-          <img src="assets/img/logo.png" alt="logo" />
+  <!--  CSS Files -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/css/aos.css" rel="stylesheet" />
+  <link href="assets/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/css/all.min.css" rel="stylesheet" />
+  <link href="assets/css/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="assets/css/main.css" rel="stylesheet" />
+</head>
+
+<body class="index-page">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="logo" />
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+            <a href="products.html"><span>Products</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown">
+                <a href="products.html"><span>Fractional laser</span>
+                  <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="products.html">Dropdown 1</a></li>
+                  <li><a href="products.html">Dropdown 2</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="products.html"><span>Radio Frequency</span>
+                  <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="products.html">Dropdown 1</a></li>
+                  <li><a href="products.html">Dropdown 2</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="products.html"><span>Yellow laser</span>
+                  <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="products.html">Dropdown 1</a></li>
+                  <li><a href="products.html">Dropdown 2</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="products.html"><span>Examiner laser</span>
+                  <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="products.html">Dropdown 1</a></li>
+                  <li><a href="products.html">Dropdown 2</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="events.html">events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="d-flex align-items-center">
+        <i class="mobile-nav-toggle d-lg-none bi bi-list p-2"></i>
+        <button class="custom-btn"><a href="apply.html">Apply Now</a></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-item active">
+          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="" />
+          <div class="carousel-container">
+            <h2>Welcome to Pulse Medical</h2>
+            <p>
+              At Pulse Medical, we combine advanced technology with expert
+              care to bring out the best version of you. Your journey to
+              radiant beauty begins here.
+            </p>
+            <!-- <a href="#featured-services" class="btn-get-started"
+                >Get Started</a
+              > -->
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="" />
+          <div class="carousel-container">
+            <h2>Excellence in Every Touch</h2>
+            <p>
+              With years of experience and a passion for perfection, our team
+              is dedicated to providing safe, effective, and transformative
+              aesthetic treatments.
+            </p>
+            <!-- <a href="#featured-services" class="btn-get-started"
+                >Get Started</a
+              > -->
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="" />
+          <div class="carousel-container">
+            <h2>Beauty Tailored to You</h2>
+            <p>
+              Our team of specialists crafts personalized treatments to help
+              you achieve your aesthetic goals, blending artistry with
+              cutting-edge science.
+            </p>
+            <!-- <a href="#featured-services" class="btn-get-started"
+                >Get Started</a
+              > -->
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
         </a>
 
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="dropdown">
-              <a href="products.html"
-                ><span>Products</span>
-                <i class="bi bi-chevron-down toggle-dropdown"></i
-              ></a>
-              <ul>
-                <li class="dropdown">
-                  <a href="products.html"
-                    ><span>Fractional laser</span>
-                    <i class="bi bi-chevron-down toggle-dropdown"></i
-                  ></a>
-                  <ul>
-                    <li><a href="products.html">Dropdown 1</a></li>
-                    <li><a href="products.html">Dropdown 2</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="products.html"
-                    ><span>Radio Frequency</span>
-                    <i class="bi bi-chevron-down toggle-dropdown"></i
-                  ></a>
-                  <ul>
-                    <li><a href="products.html">Dropdown 1</a></li>
-                    <li><a href="products.html">Dropdown 2</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="products.html"
-                    ><span>Yellow laser</span>
-                    <i class="bi bi-chevron-down toggle-dropdown"></i
-                  ></a>
-                  <ul>
-                    <li><a href="products.html">Dropdown 1</a></li>
-                    <li><a href="products.html">Dropdown 2</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="products.html"
-                    ><span>Examiner laser</span>
-                    <i class="bi bi-chevron-down toggle-dropdown"></i
-                  ></a>
-                  <ul>
-                    <li><a href="products.html">Dropdown 1</a></li>
-                    <li><a href="products.html">Dropdown 2</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="events.html">events</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="d-flex align-items-center">
-          <i class="mobile-nav-toggle d-lg-none bi bi-list p-2"></i>
-          <button class="custom-btn"><a href="apply.html">Apply Now</a></button>
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"></ol>
+      </div>
+    </section>
+    <!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Start your journey to your ideal beauty today!</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="" />
+          </div>
+
+          <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>Create your account today and get started for free!</h3>
+            <p class="fst-italic">
+              We believe everyone deserves to feel confident and satisfied
+              with their appearance. Our dedicated team is here to help you
+              achieve that with innovative aesthetic medical solutions.
+            </p>
+            <ul>
+              <li>
+                <i class="bi bi-check-circle"></i>
+                <span>A team of experts committed to making your journey smooth
+                  and safe.</span>
+              </li>
+              <li>
+                <i class="bi bi-check-circle"></i>
+                <span>An all-encompassing and comfortable experience to achieve
+                  your beauty goals.</span>
+              </li>
+            </ul>
+            <a href="products.html" class="read-more"><span>Acknowledge our devices</span><i
+                class="bi bi-arrow-right"></i></a>
+            <a class="cta-btn" href="https://wa.me/" target="_blank">WhatsApp Direct</a>
+          </div>
         </div>
       </div>
-    </header>
+    </section>
+    <!-- /About Section -->
 
-    <main class="main">
-      <!-- Hero Section -->
-      <section id="hero" class="hero section dark-background">
-        <div
-          id="hero-carousel"
-          class="carousel slide carousel-fade"
-          data-bs-ride="carousel"
-          data-bs-interval="5000"
-        >
-          <div class="carousel-item active">
-            <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="" />
-            <div class="carousel-container">
-              <h2>Welcome to Pulse Medical</h2>
+    <!-- More Services Section -->
+    <section id="more-services" class="more-services section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Indications Treated by our Devices</h2>
+        <p>We provide innovative solutions to address a wide range of health concerns using the latest medical
+          technologies and devices, ensuring safe and effective results.</p>
+
+      </div>
+
+      <div class="container swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="assets/img/serices/ser2.jpg" class="img-fluid card-img" alt="" />
+              </div>
+              <h3>Acne</h3>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="assets/img/serices/ser1.jpg" class="img-fluid card-img" alt="" />
+              </div>
+              <h3>Vitiligo</h3>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="assets/img/serices/ser3.jpg" class="img-fluid card-img" alt="" />
+              </div>
+              <h3>Alopecia areata</h3>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide" data-aos="fade-up" data-aos-delay="400">
+            <div class="card">
+              <div class="image-wrapper">
+                <img src="assets/img/serices/ser4.png" class="img-fluid card-img" alt="" />
+              </div>
+              <h3>Face and skin tightening</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Swiper Navigation Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- /More Services Section -->
+
+    <!-- Location Section -->
+    <section id="location" class="location section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+            <h3>Our devices reached to each district in Egypt</h3>
+            <p class="fst-italic">
+              From bustling cities to tranquil towns, Pulse Medical has
+              extended its reach to every district in Egypt. We’re committed
+              to providing advanced aesthetic solutions wherever you are,
+              ensuring accessibility and convenience for all.
+            </p>
+          </div>
+
+          <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509417!2d144.95373531531688!3d-37.8172099797517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xb1d65e16e4c4ae8!2sFederation%20Square!5e0!3m2!1sen!2sus!4v1616655946359!5m2!1sen!2sus"
+              class="w-100" height="450" style="border: 0" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Location Section -->
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Services</h2>
+        <p>
+          Discover our range of premium aesthetic treatments designed to
+          enhance your natural beauty and boost your confidence. Our medical
+          experts use the latest technologies to deliver safe and effective
+          results.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-activity icon"></i></div>
+              <h4>
+                <a href="" class="stretched-link">Facial Aesthetic Treatments</a>
+              </h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Our specialized facial treatments include botox, dermal
+                fillers, and skin rejuvenation therapies to give you a
+                youthful, radiant glow.
               </p>
-              <a href="#featured-services" class="btn-get-started"
-                >Get Started</a
-              >
             </div>
           </div>
 
-          <div class="carousel-item">
-            <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="" />
-            <div class="carousel-container">
-              <h2>lorem ipsum dolor</h2>
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-bounding-box-circles icon"></i>
+              </div>
+              <h4>
+                <a href="" class="stretched-link">Laser Skin Treatments</a>
+              </h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Target skin imperfections such as acne scars, wrinkles, and
+                pigmentation with advanced laser treatments for smoother,
+                clearer skin.
               </p>
-              <a href="#featured-services" class="btn-get-started"
-                >Get Started</a
-              >
             </div>
           </div>
 
-          <div class="carousel-item">
-            <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="" />
-            <div class="carousel-container">
-              <h2>Our Team</h2>
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week icon"></i>
+              </div>
+              <h4>
+                <a href="" class="stretched-link">Body Contouring</a>
+              </h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Sculpt and contour your body with non-invasive treatments that
+                target stubborn fat areas and help achieve a more toned
+                appearance.
               </p>
-              <a href="#featured-services" class="btn-get-started"
-                >Get Started</a
-              >
             </div>
           </div>
 
-          <a
-            class="carousel-control-prev"
-            href="#hero-carousel"
-            role="button"
-            data-bs-slide="prev"
-          >
-            <span
-              class="carousel-control-prev-icon bi bi-chevron-left"
-              aria-hidden="true"
-            ></span>
-          </a>
-
-          <a
-            class="carousel-control-next"
-            href="#hero-carousel"
-            role="button"
-            data-bs-slide="next"
-          >
-            <span
-              class="carousel-control-next-icon bi bi-chevron-right"
-              aria-hidden="true"
-            ></span>
-          </a>
-
-          <ol class="carousel-indicators"></ol>
-        </div>
-      </section>
-      <!-- /Hero Section -->
-
-      <!-- About Section -->
-      <section id="about" class="about section">
-        <div class="container section-title" data-aos="fade-up">
-          <h2>About</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </div>
-
-        <div class="container">
-          <div class="row gy-4">
-            <div
-              class="col-lg-6 order-1 order-lg-2"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <img src="assets/img/about.jpg" class="img-fluid" alt="" />
-            </div>
-
-            <div
-              class="col-lg-6 order-2 order-lg-1 content"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <h3>Create your account today and get started for free!</h3>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+              <h4><a href="" class="stretched-link">Hair Restoration</a></h4>
+              <p>
+                Restore your hair’s natural thickness with advanced treatments
+                designed to stimulate hair growth and prevent further loss.
               </p>
-              <ul>
-                <li>
-                  <i class="bi bi-check-circle"></i>
-                  <span
-                    >Ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</span
-                  >
-                </li>
-                <li>
-                  <i class="bi bi-check-circle"></i>
-                  <span
-                    >Duis aute irure dolor in reprehenderit in voluptate
-                    velit.</span
-                  >
-                </li>
-              </ul>
-              <a href="products.html" class="read-more"
-                ><span>Acknowledge our devices</span
-                ><i class="bi bi-arrow-right"></i
-              ></a>
             </div>
           </div>
         </div>
-      </section>
-      <!-- /About Section -->
+      </div>
+    </section>
 
-      <!-- Services Section -->
-      <section id="services" class="services section">
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Our Services</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
+    <!-- /Services Section -->
 
-        <div class="container">
-          <div class="row gy-4">
-            <div
-              class="col-xl-3 col-md-6 d-flex"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="service-item position-relative">
-                <div class="icon"><i class="bi bi-activity icon"></i></div>
-                <h4>
-                  <a href="" class="stretched-link">Satisfactory Marketing</a>
-                </h4>
-                <p>
-                  Voluptatum deleniti atque corrupti quos dolores et quas
-                  molestias excepturi
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="col-xl-3 col-md-6 d-flex"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="service-item position-relative">
-                <div class="icon">
-                  <i class="bi bi-bounding-box-circles icon"></i>
-                </div>
-                <h4>
-                  <a href="" class="stretched-link">Practical Training</a>
-                </h4>
-                <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="col-xl-3 col-md-6 d-flex"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="service-item position-relative">
-                <div class="icon">
-                  <i class="bi bi-calendar4-week icon"></i>
-                </div>
-                <h4>
-                  <a href="" class="stretched-link">Electronic Training</a>
-                </h4>
-                <p>
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="col-xl-3 col-md-6 d-flex"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="service-item position-relative">
-                <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-                <h4><a href="" class="stretched-link">Medical</a></h4>
-                <p>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /Services Section -->
-
-      <!-- Call To Action Section -->
-      <section
-        id="call-to-action"
-        class="call-to-action section dark-background"
-      >
-        <img src="assets/img/contactus.jpg" alt="" />
-
-        <div class="container">
-          <div
-            class="row justify-content-center"
-            data-aos="zoom-in"
-            data-aos-delay="100"
-          >
-            <div class="col-xl-10">
-              <div class="text-center">
-                <h3>Intrested in our technology? contact us now</h3>
-                <a class="cta-btn" href="tel:+">Call Phone</a>
-                <a class="cta-btn" href="https://wa.me/" target="_blank"
-                  >WhatsApp Direct</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /Call To Action Section -->
-
-      <!-- More Services Section -->
-      <section id="more-services" class="more-services section">
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Indications Treated by our devices</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-
-        <div class="container">
-          <div class="row gy-4">
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-              <div class="card">
-                <img
-                  src="assets/img/serices/ser2.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <h3>Acne</h3>
-              </div>
-            </div>
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="card">
-                <img
-                  src="assets/img/serices/ser1.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <h3>Vitiligo</h3>
-              </div>
-            </div>
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-              <div class="card">
-                <img
-                  src="assets/img/serices//ser3.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <h3>Alopecia areata</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /More Services Section -->
-
-      <!-- Testimonials Section -->
-      <section id="testimonials" class="testimonials section">
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Testimonials</h2>
-          <p>What clients say about us</p>
-        </div>
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper init-swiper">
-            <script type="application/json" class="swiper-config">
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>What clients say about us</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
               {
                 "loop": true,
                 "speed": 600,
@@ -429,195 +388,124 @@
                 }
               }
             </script>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    Proin iaculis purus consequat sem cure digni ssim donec
-                    porttitora entum suscipit rhoncus. Accusantium quam,
-                    ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                    risus at semper.
-                  </p>
-                  <div class="profile mt-auto">
-                    <img
-                      src="assets/img/testimonials/testimonials-1.jpg"
-                      class="testimonial-img"
-                      alt=""
-                    />
-                    <h3>Saul Goodman</h3>
-                    <h4>Ceo &amp; Founder</h4>
-                  </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                  multos export minim fugiat minim velit minim dolor enim duis
+                  veniam ipsum anim magna sunt elit fore quem dolore labore
+                  illum veniam.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
                 </div>
               </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    Export tempor illum tamen malis malis eram quae irure esse
-                    labore quem cillum quid cillum eram malis quorum velit fore
-                    eram velit sunt aliqua noster fugiat irure amet legam anim
-                    culpa.
-                  </p>
-                  <div class="profile mt-auto">
-                    <img
-                      src="assets/img/testimonials/testimonials-2.jpg"
-                      class="testimonial-img"
-                      alt=""
-                    />
-                    <h3>Sara Wilsson</h3>
-                    <h4>Designer</h4>
-                  </div>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    Enim nisi quem export duis labore cillum quae magna enim
-                    sint quorum nulla quem veniam duis minim tempor labore quem
-                    eram duis noster aute amet eram fore quis sint minim.
-                  </p>
-                  <div class="profile mt-auto">
-                    <img
-                      src="assets/img/testimonials/testimonials-3.jpg"
-                      class="testimonial-img"
-                      alt=""
-                    />
-                    <h3>Jena Karlis</h3>
-                    <h4>Store Owner</h4>
-                  </div>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa
-                    multos export minim fugiat minim velit minim dolor enim duis
-                    veniam ipsum anim magna sunt elit fore quem dolore labore
-                    illum veniam.
-                  </p>
-                  <div class="profile mt-auto">
-                    <img
-                      src="assets/img/testimonials/testimonials-4.jpg"
-                      class="testimonial-img"
-                      alt=""
-                    />
-                    <h3>Matt Brandon</h3>
-                    <h4>Freelancer</h4>
-                  </div>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure
-                    aliqua veniam tempor noster veniam enim culpa labore duis
-                    sunt culpa nulla illum cillum fugiat legam esse veniam culpa
-                    fore nisi cillum quid.
-                  </p>
-                  <div class="profile mt-auto">
-                    <img
-                      src="assets/img/testimonials/testimonials-5.jpg"
-                      class="testimonial-img"
-                      alt=""
-                    />
-                    <h3>John Larson</h3>
-                    <h4>Entrepreneur</h4>
-                  </div>
-                </div>
-              </div>
-              <!-- End testimonial item -->
             </div>
-            <div class="swiper-pagination"></div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                  multos export minim fugiat minim velit minim dolor enim duis
+                  veniam ipsum anim magna sunt elit fore quem dolore labore
+                  illum veniam.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                </div>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                  multos export minim fugiat minim velit minim dolor enim duis
+                  veniam ipsum anim magna sunt elit fore quem dolore labore
+                  illum veniam.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                </div>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                  multos export minim fugiat minim velit minim dolor enim duis
+                  veniam ipsum anim magna sunt elit fore quem dolore labore
+                  illum veniam.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                </div>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure
+                  aliqua veniam tempor noster veniam enim culpa labore duis
+                  sunt culpa nulla illum cillum fugiat legam esse veniam culpa
+                  fore nisi cillum quid.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                </div>
+              </div>
+            </div>
+            <!-- End testimonial item -->
           </div>
+          <div class="swiper-pagination"></div>
         </div>
-      </section>
-      <!-- /Testimonials Section -->
+      </div>
+    </section>
+    <!-- /Testimonials Section -->
 
-      <!-- Location Section -->
-      <section id="location" class="location section">
-        <div class="container">
-          <div class="row gy-4">
-            <div
-              class="col-lg-6 order-1 order-lg-2"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <h3>Our devices reached to each district in Egypt</h3>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui
-                porro quo corrupti ex error, minus veniam dolores nisi,
-                accusamus assumenda dicta obcaecati esse atque praesentium
-                ullam, cum deleniti excepturi officia!
-              </p>
-            </div>
-
-            <div
-              class="col-lg-6 order-2 order-lg-1 content"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509417!2d144.95373531531688!3d-37.8172099797517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xb1d65e16e4c4ae8!2sFederation%20Square!5e0!3m2!1sen!2sus!4v1616655946359!5m2!1sen!2sus"
-                class="w-100"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-              >
-              </iframe>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Location Section -->
-
-      <!-- Clients Section -->
-      <section id="clients" class="clients section">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper init-swiper">
-            <script type="application/json" class="swiper-config">
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+      <div class="container section-title" data-aos="fade-up" data-aos-delay="100">
+        <p class="mb-3">Trusted by 10,000+ companies around the world</p>
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
               {
                 "loop": true,
                 "speed": 600,
@@ -650,143 +538,108 @@
                 }
               }
             </script>
-            <div class="swiper-wrapper align-items-center">
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/client-1.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/client-2.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/client-3.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/client-4.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/client-5.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/client-6.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/client-7.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/client-8.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <img src="assets/img/clients/client-1.png" class="img-fluid" alt="" />
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/client-2.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/client-3.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/client-4.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/client-5.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/client-6.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/client-7.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/client-8.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- /Clients Section -->
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <div>
+            <img src="assets/img/logo.png" alt="" height="70px" />
           </div>
         </div>
-      </section>
-      <!-- /Clients Section -->
-    </main>
 
-    <footer id="footer" class="footer light-background">
-      <div class="container">
-        <div class="row gy-3">
-          <div class="col-lg-3 col-md-6 d-flex">
-            <div>
-              <img src="assets/img/logo.png" alt="" height="70px" />
-            </div>
+        <div class="col-lg-3 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="events.html">events</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <div>
+            <h4>Contact</h4>
+            <p>
+              <strong>Phone:</strong> <span>+1 5589 55488 55</span><br />
+              <strong>Email:</strong> <span>info@example.com</span><br />
+            </p>
           </div>
+        </div>
 
-          <div class="col-lg-3 col-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About us</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="events.html">events</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex">
-            <div>
-              <h4>Contact</h4>
-              <p>
-                <strong>Phone:</strong> <span>+1 5589 55488 55</span><br />
-                <strong>Email:</strong> <span>info@example.com</span><br />
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <h4>Follow Us</h4>
-            <div class="social-links d-flex">
-              <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
+        <div class="col-lg-3 col-md-6">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container copyright text-center mt-4">
-        <p>
-          © <span>Copyright</span>
-          <strong class="px-1 sitename">Plus Medical</strong>
-          <span>All Rights Reserved</span>
-        </p>
-        <div class="credits">Designed by <a href=""></a></div>
-      </div>
-    </footer>
+    <div class="container copyright text-center mt-4">
+      <p>
+        © <span>Copyright</span>
+        <strong class="px-1 sitename">Plus Medical</strong>
+        <span>All Rights Reserved</span>
+      </p>
+      <div class="credits">Designed by <a href=""></a></div>
+    </div>
+  </footer>
 
-    <!-- Scroll Top -->
-    <a
-      href="#"
-      id="scroll-top"
-      class="scroll-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
-    <!-- Preloader -->
-    <div id="preloader"></div>
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
-    <!--  JS Files -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/aos.js"></script>
-    <script src="assets/js/purecounter_vanilla.js"></script>
-    <script src="assets/js/glightbox.min.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/swiper-bundle.min.js"></script>
+  <!--  JS Files -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/purecounter_vanilla.js"></script>
+  <script src="assets/js/glightbox.min.js"></script>
+  <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/js/isotope.pkgd.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
 
-    <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
-  </body>
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>

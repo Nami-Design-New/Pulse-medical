@@ -229,3 +229,28 @@ function initMap() {
     map: map,
   });
 }
+////services on home ////
+const swiper = new Swiper('.swiper-container', {
+  loop: true, 
+  slidesPerView: 3,  
+  spaceBetween: 20, 
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+    delay: 3000, 
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 3, 
+    },
+    768: {
+      slidesPerView: 2, 
+    },
+    480: {
+      slidesPerView: 1, 
+    },
+  },
+});
+

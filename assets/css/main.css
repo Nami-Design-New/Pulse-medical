@@ -47,6 +47,7 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+
 }
 
 a {
@@ -188,6 +189,44 @@ h6 {
   .navmenu li {
     position: relative;
   }
+  .language-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .language-dropdown i:hover{
+    color: #0b386a;
+  }
+  .language-dropdown i{
+    font-size: 1.3rem;
+  }
+  .language-dropdown .language{
+    border: none;
+    background-color: white ;
+  }
+ 
+  .language-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .language-dropdown-content a {
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .language-dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .language-dropdown:hover .language-dropdown-content {
+    display: block;
+  }
 
   .navmenu > ul > li {
     white-space: nowrap;
@@ -306,6 +345,7 @@ h6 {
     padding: 0.5em 0.7em;
     font-size: 16px;
   }
+
 }
 /* Mobile Navigation */
 @media (max-width: 991px) {
@@ -1824,3 +1864,15 @@ section,
 .clients .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
+
+/* //////////// */
+
+/* .rtlDir{
+  direction: rtl;
+  text-align: right;
+
+}
+.rtlDir .hero .carousel-control-prev,
+.rtlDir .hero .carousel-control-next {
+  transform: scaleX(-1); 
+} */

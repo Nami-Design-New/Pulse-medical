@@ -21,18 +21,21 @@
   <link href="assets/css/aos.css" rel="stylesheet" />
   <link href="assets/css/glightbox.min.css" rel="stylesheet" />
   <link href="assets/css/swiper-bundle.min.css" rel="stylesheet" />
-  <link href="assets/css/main.css?v=3" rel="stylesheet" />
+  <link href="assets/css/main.css?v=2" rel="stylesheet" />
 </head>
 
 <body class="about-page  rtlDir">
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <header id="header" class="header d-flex align-items-center ">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <i class="mobile-nav-toggle d-lg-none bi bi-list p-2"></i>
+      <!-- logo -->
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="logo" />
       </a>
+
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li class="dropdown">
             <a href="products.html"><span>Products</span>
@@ -72,25 +75,30 @@
               </li>
             </ul>
           </li>
-          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="services.html">Services</a></li>
           <li><a href="events.html">events</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li>
-            <div class="language-dropdown">
-              <button class="language">
-                <i class="bi bi-globe"></i>
-              </button>
-              <div class="language-dropdown-content">
-                <a href="#" onclick="setLanguage('en')">EN</a>
-                <a href="#" onclick="setLanguage('ar')">AR</a>
-              </div>
-            </div>
+            
           </li>
         </ul>
       </nav>
-      <div class="d-flex align-items-center">
-        <i class="mobile-nav-toggle d-lg-none bi bi-list p-2"></i>
-        <button class="custom-btn"><a href="apply.html">Apply Now</a></button>
+      <div class="d-flex align-items-center gap-1">
+        
+        <button class="AEBtn" ><a href="apply.html">Apply Now</a></button>
+        <!-- lang dropdown -->
+        <div class="language-dropdown">
+          <button class="language" popovertarget="langMenu">
+            <i class="bi bi-globe"></i>
+          </button>
+          <div class="language-dropdown-content" popover="" id="langMenu">
+            <a href="#" onclick="setLanguage('en')">EN</a>
+            <a href="#" onclick="setLanguage('ar')">AR</a>
+          </div>
+          
+        </div>
+        <!--  -->
+
       </div>
     </div>
   </header>

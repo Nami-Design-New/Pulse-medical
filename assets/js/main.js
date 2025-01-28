@@ -6,15 +6,15 @@
   /**
    * Apply .scrolled class to the body as the page is scrolled down
    */
-  function toggleScrolled() {
-    const selectBody = document.querySelector('body');
-    const selectHeader = document.querySelector('#header');
-    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
-    window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
-  }
+  // function toggleScrolled() {
+  //   const selectBody = document.querySelector('body');
+  //   const selectHeader = document.querySelector('#header');
+  //   if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
+  //   window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+  // }
 
-  document.addEventListener('scroll', toggleScrolled);
-  window.addEventListener('load', toggleScrolled);
+  // document.addEventListener('scroll', toggleScrolled);
+  // window.addEventListener('load', toggleScrolled);
 
   /**
    * Mobile nav toggle
@@ -254,3 +254,15 @@ const swiper = new Swiper('.swiper-container', {
   },
 });
 
+// =============ahmed eltatawy=============
+// scroll Header
+
+document.addEventListener('DOMContentLoaded', ()=>{
+  window.addEventListener('scroll' , ()=>{
+    if(window.scrollY >= 150){
+      document.querySelector('header').classList.add('scroll');
+    }else{
+      document.querySelector('header').classList.remove('scroll');
+    }
+  })
+})

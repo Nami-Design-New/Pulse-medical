@@ -30,11 +30,8 @@
 </head>
 
 <body class="index-page rtlDir">
-  <!-- header -->
-  <header id="header" class="header d-flex align-items-center ">
+  <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-      <i class="mobile-nav-toggle d-lg-none bi bi-list p-2"></i>
-      <!-- logo -->
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="logo" />
       </a>
@@ -83,33 +80,27 @@
           </li>
           <li><a href="services.html">Services</a></li>
           <li><a href="events.html">events</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li>
-            
-          </li>
-        </ul>
-      </nav>
-      <div class="d-flex align-items-center gap-1">
-        
-        <button class="AEBtn" ><a href="apply.html">Apply Now</a></button>
-        <!-- lang dropdown -->
-        <div class="language-dropdown">
-          <button class="language" popovertarget="langMenu">
+          <li><a href="contact.html">Contact</a></li>  
+          <li> 
+            <div class="language-dropdown">
+            <button class="language">
             <i class="bi bi-globe"></i>
-          </button>
-          <div class="language-dropdown-content" popover="" id="langMenu">
-            <a href="#" onclick="setLanguage('en')">EN</a>
-            <a href="#" onclick="setLanguage('ar')">AR</a>
-          </div>
-          
-        </div>
-        <!--  -->
-
+            </button>
+            <div class="language-dropdown-content">
+              <a href="#" onclick="setLanguage('en')">EN</a>
+              <a href="#" onclick="setLanguage('ar')">AR</a>
+            </div>
+          </div></li>
+      </ul>
+      </nav>
+      <div class="d-flex align-items-center">
+        <i class="mobile-nav-toggle d-lg-none bi bi-list p-2"></i>
+        <button class="custom-btn"><a href="apply.html">Apply Now</a></button>
+        
       </div>
     </div>
   </header>
 
-  <!-- main -->
   <main class="main">
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
@@ -243,15 +234,15 @@
               <h3>Vitiligo</h3>
             </div>
           </div>
-          <!-- Slide 3 -->
-          <div class="swiper-slide" data-aos="fade-up" data-aos-delay="300">
-            <div class="card">
-              <div class="image-wrapper">
-                <img src="assets/img/serices/ser3.jpg" class="img-fluid card-img" alt="" />
+              <!-- Slide 3 -->
+              <div class="swiper-slide" data-aos="fade-up" data-aos-delay="300">
+                <div class="card">
+                  <div class="image-wrapper">
+                    <img src="assets/img/serices/ser3.jpg" class="img-fluid card-img" alt="" />
+                  </div>
+                  <h3>Alopecia areata</h3>
+                </div>
               </div>
-              <h3>Alopecia areata</h3>
-            </div>
-          </div>
 
           <!-- Slide 3 -->
           <div class="swiper-slide" data-aos="fade-up" data-aos-delay="300">
@@ -273,7 +264,7 @@
             </div>
           </div>
         </div>
-
+    
 
         <!-- Swiper Navigation Arrows -->
         <div class="swiper-button-next"></div>
@@ -601,7 +592,7 @@
     </section>
     <!-- /Clients Section -->
   </main>
-  <!-- footer -->
+
   <footer id="footer" class="footer light-background">
     <div class="container">
       <div class="row gy-3">

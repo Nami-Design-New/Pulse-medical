@@ -61,8 +61,8 @@ h6 {
 }
 /* Global Header */
 .header {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
   padding: 10px 0;
   transition: all 0.3s;
   position: absolute;
@@ -77,6 +77,8 @@ h6 {
 }
 .header .logo {
   line-height: 1;
+  filter: invert(1) brightness(1000%);
+
 }
 .header .logo img {
   max-height: 60px;
@@ -184,7 +186,7 @@ h6 {
   }
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: var(--contrast-color);
     font-size: 16px;
     padding: 0 2px;
     font-family: var(--nav-font);
@@ -210,7 +212,7 @@ h6 {
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: var(--accent-color);
+    background-color: var(--contrast-color);
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -224,7 +226,7 @@ h6 {
   .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: var(--contrast-color);
   }
   .navmenu .dropdown ul {
     margin: 0;
@@ -255,8 +257,10 @@ h6 {
   }
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
+
   .navmenu .dropdown ul li:hover > a {
     color: var(--nav-dropdown-hover-color);
+
   }
   .navmenu .dropdown:hover > ul {
     opacity: 1;
@@ -282,7 +286,7 @@ h6 {
 /* Mobile Navigation */
 @media (max-width: 991px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
+    color: var(--contrast-color);
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
@@ -976,6 +980,8 @@ section,
 --------------------------------------------------------------*/
 .products-details .products-details-slider img {
   width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 .products-details .products-details-slider .swiper-pagination {
   margin-top: 20px;
@@ -984,12 +990,20 @@ section,
 .products-details .products-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
   opacity: 1;
 }
 .products-details .products-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
+
+.products-details .products-info .specifications{
+  gap:50px;
+}
+.products-details .products-info .specifications h5{
+  color: var(--accent-color);
+}
+
 .products-details .products-info {
   background-color: var(--surface-color);
   padding: 30px;
@@ -1442,10 +1456,50 @@ main {
   max-height: 70vh;
   object-fit: cover;
 }
+
+/* events-details  */
+.event-details-section {
+  padding: 50px 0;
+  text-align: start;
+}
+.event-details-section .custom-card {
+  border-radius: 15px;
+  overflow: hidden; 
+  height: 250px; 
+}
+.event-details-section .custom-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px; 
+  transition: 1s;
+}
+.event-details-section .custom-card img:hover{
+  transform: scale(1.1);
+}
+.event-details-section .hashtag {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #6c757d;
+}
+.event-details-section .section-title h3{
+  color: var(--accent-color);
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .event-details-section .event-details-cards {
+    padding: 0px 15px;
+  }
+  .event-details-section .section-title h3{
+font-size: 25px;
+
+  }
+}
+
 /* Contact Form */
 .contact .info-item {
   background: color-mix(in srgb, var(--default-color), transparent 96%);
-  padding: 30px;
+
 }
 .contact .info-item i {
   font-size: 38px;
@@ -1457,11 +1511,28 @@ main {
   font-weight: 700;
   margin: 20px 0 10px 0;
 }
-.contact .info-item p {
+
+.contact .info-item h6{
+  display: inline-block;
+color: var(--accent-color);
+margin-right: 2px;
+}
+.contact .info-item  p {
+  color: var(--default-color);
+  padding: 0;
+  
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+.contact .info-item  a {
+  color: var(--default-color);
+
   padding: 0;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 0;
+  display: inline-block;
 }
 .contact .contact-form,
 .apply .apply-form {
@@ -1469,6 +1540,10 @@ main {
   padding: 30px;
   height: 100%;
 }
+.contact .contact-form label{
+color: var(--accent-color);
+}
+
 .contact .contact-form input[type="text"],
 .contact .contact-form input[type="email"],
 .contact .contact-form input[type="tel"],
@@ -1703,7 +1778,7 @@ main {
   background-color: var(--accent-color);
   /* border: none; */
   color: var(--background-color);
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--contrast-color);
   border-radius: 8px;
   position: relative;
   overflow: hidden;
@@ -1746,15 +1821,18 @@ main {
   position: relative;
   display: inline-block;
 }
+
 .language-dropdown i:hover {
   color: #0b386a;
 }
+
 .language-dropdown i {
   font-size: 1.3rem;
 }
 .language-dropdown .language {
+  color: var(--contrast-color);
   border: none;
-  background-color: white;
+  background-color:var(--accent-color);
   position: relative;
 }
 [popovertarget="langMenu"] {
@@ -2512,4 +2590,3 @@ section:nth-child(even) {
     font-size: 30px;
     font-weight: bold;
   }
-}

@@ -27,84 +27,91 @@
     <link href="assets/css/main.css?v=3" rel="stylesheet" />
   </head>
 
-  <body class="index-page  rtlDir">
-   <header id="header" class="header d-flex align-items-center ">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-      <i class="mobile-nav-toggle d-lg-none bi bi-list p-2"></i>
-      <!-- logo -->
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="logo" />
-      </a>
+  <body class="index-page rtlDir">
+    <header id="header" class="header d-flex align-items-center">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <i class="mobile-nav-toggle d-lg-none bi bi-list p-2"></i>
+        <!-- logo -->
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="logo" />
+        </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="dropdown">
-            <a href="products.html"><span>Products</span>
-              <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li class="dropdown">
-                <a href="products.html"><span>Fractional laser</span>
-                  <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="products.html">Dropdown 1</a></li>
-                  <li><a href="products.html">Dropdown 2</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="products.html"><span>Radio Frequency</span>
-                  <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="products.html">Dropdown 1</a></li>
-                  <li><a href="products.html">Dropdown 2</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="products.html"><span>Yellow laser</span>
-                  <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="products.html">Dropdown 1</a></li>
-                  <li><a href="products.html">Dropdown 2</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="products.html"><span>Examiner laser</span>
-                  <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="products.html">Dropdown 1</a></li>
-                  <li><a href="products.html">Dropdown 2</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="events.html">events</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li>
-            
-          </li>
-        </ul>
-      </nav>
-      <div class="d-flex align-items-center gap-1">
-        
-        <button class="AEBtn" ><a href="apply.html">Apply Now</a></button>
-        <!-- lang dropdown -->
-        <div class="language-dropdown">
-          <button class="language" popovertarget="langMenu">
-            <i class="bi bi-globe"></i>
-          </button>
-          <div class="language-dropdown-content" popover="" id="langMenu">
-            <a href="#" onclick="setLanguage('en')">EN</a>
-            <a href="#" onclick="setLanguage('ar')">AR</a>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="products.html"
+                ><span>Products</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li class="dropdown">
+                  <a href="products.html"
+                    ><span>Fractional laser</span>
+                    <i class="bi bi-chevron-down toggle-dropdown"></i
+                  ></a>
+                  <ul>
+                    <li><a href="products.html">Dropdown 1</a></li>
+                    <li><a href="products.html">Dropdown 2</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="products.html"
+                    ><span>Radio Frequency</span>
+                    <i class="bi bi-chevron-down toggle-dropdown"></i
+                  ></a>
+                  <ul>
+                    <li><a href="products.html">Dropdown 1</a></li>
+                    <li><a href="products.html">Dropdown 2</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="products.html"
+                    ><span>Yellow laser</span>
+                    <i class="bi bi-chevron-down toggle-dropdown"></i
+                  ></a>
+                  <ul>
+                    <li><a href="products.html">Dropdown 1</a></li>
+                    <li><a href="products.html">Dropdown 2</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="products.html"
+                    ><span>Examiner laser</span>
+                    <i class="bi bi-chevron-down toggle-dropdown"></i
+                  ></a>
+                  <ul>
+                    <li><a href="products.html">Dropdown 1</a></li>
+                    <li><a href="products.html">Dropdown 2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="events.html">events</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li></li>
+          </ul>
+        </nav>
+        <div class="d-flex align-items-center gap-1">
+          <button class="AEBtn"><a href="apply.html">Apply Now</a></button>
+          <!-- lang dropdown -->
+          <div class="language-dropdown">
+            <button class="language" popovertarget="langMenu">
+              <i class="bi bi-globe"></i>
+            </button>
+            <div class="language-dropdown-content" popover="" id="langMenu">
+              <a href="#" onclick="setLanguage('en')">EN</a>
+              <a href="#" onclick="setLanguage('ar')">AR</a>
+            </div>
           </div>
-          
+          <!--  -->
         </div>
-        <!--  -->
-
       </div>
-    </div>
-  </header>
+    </header>
 
     <main class="main">
       <!-- Contact Section -->
@@ -133,16 +140,32 @@
                   <div class="info-item" data-aos="fade" data-aos-delay="200">
                     <i class="bi bi-geo-alt"></i>
                     <h3>Address</h3>
-                    <p>A108 Adam Street</p>
-                    <p>New York, NY 535022</p>
+                    <div>
+                      <h6>Main Address:</h6>
+                      <p>A108 Adam Street</p>
+                    </div>
+                    <div>
+                      <h6>Ware House:</h6>
+                      <p>A108 Adam Street</p>
+                    </div>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="info-item" data-aos="fade" data-aos-delay="300">
                     <i class="bi bi-telephone"></i>
                     <h3>Call Us</h3>
-                    <p>+1 5589 55488 55</p>
-                    <p>+1 6678 254445 41</p>
+                    <div>
+                      <h6>Sales:</h6>
+                      <a href="tel:">+1 5589 55488 55</a>
+                    </div>
+                    <div>
+                      <h6>HR:</h6>
+                      <a href="tel:">+1 5589 55488 55</a>
+                    </div>
+                    <div>
+                      <h6>Tech Supp:</h6>
+                      <a href="tel:">+1 5589 55488 55</a>
+                    </div>
                   </div>
                 </div>
 
@@ -150,8 +173,8 @@
                   <div class="info-item" data-aos="fade" data-aos-delay="400">
                     <i class="bi bi-envelope"></i>
                     <h3>Email Us</h3>
-                    <p>info@example.com</p>
-                    <p>contact@example.com</p>
+                    <div><a href="mailto:">info@example.com</a></div>
+                    <div><a href="mailto:"> contact@example.com</a></div>
                   </div>
                 </div>
 
@@ -179,67 +202,81 @@
             </div>
 
             <div class="col-lg-12">
-              <form
-                action=""
-                method="post"
-                class="contact-form"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <div class="row gy-4">
-                  <div class="col-md-6">
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control"
-                      placeholder="Your Name"
-                      required=""
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      placeholder="Your Email"
-                      required=""
-                    />
-                  </div>
+              <div class="container mt-2">
+                <form action="" method="post" class="contact-form">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <div class="row g-3">
+                        <div class="col-md-6">
+                          <label class="form-label">Name</label>
+                          <input
+                            type="text"
+                            name="name"
+                            class="form-control"
+                            placeholder="Your Name"
+                            required
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label">Email</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            name="email"
+                            placeholder="example@email.com"
+                            required
+                          />
+                        </div>
 
-                  <div class="col-md-12">
-                    <input
-                      type="tel"
-                      class="form-control"
-                      name="phone"
-                      placeholder="phone"
-                      required=""
-                    />
-                  </div>
+                        <div class="col-md-6">
+                          <label class="form-label">Phone</label>
+                          <input
+                            type="tel"
+                            class="form-control"
+                            name="phone"
+                            placeholder="(123) 456 - 789"
+                            required
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label">Company</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="company"
+                            placeholder="Facebook"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
 
-                  <div class="col-12">
-                    <textarea
-                      class="form-control"
-                      name="message"
-                      rows="6"
-                      placeholder="Message"
-                      required=""
-                    ></textarea>
-                  </div>
+                    <div class="col-md-6">
+                      <label class="form-label">Message</label>
+                      <textarea
+                        class="form-control"
+                        name="message"
+                        rows="6"
+                        placeholder="Please type your message here..."
+                        required
+                      ></textarea>
+                    </div>
 
-                  <div class="col-12 text-center">
-                    <!-- <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div> -->
-
-                    <button type="submit">Send Message</button>
+                    <div class="col-12 text-center">
+                      <button
+                        type="submit"
+                        class="btn btn-primary rounded-pill px-4 py-2"
+                      >
+                        Send message
+                      </button>
+                    </div>
                   </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- /Contact Section -->
     </main>
 
     <footer id="footer" class="footer light-background">

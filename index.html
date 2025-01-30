@@ -38,7 +38,6 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
           <li class="dropdown">
             <a href="products.html"><span>Products</span>
               <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -79,6 +78,7 @@
           </li>
           <li><a href="services.html">Services</a></li>
           <li><a href="events.html">events</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li>
           </li>
@@ -790,6 +790,20 @@
     function calculateTotalCount() {
       return governorateData.reduce((total, item) => total + item.count, 0);
     }
+    function countUp(element, start, end, duration) {
+      let startTime = null;
+      function update(currentTime) {
+        if (!startTime) startTime = currentTime;
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const value = Math.floor(start + progress * (end - start));
+        element.textContent = value;
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        }
+      }
+      requestAnimationFrame(update);
+    }
     function initializeGovernorates() {
       const countElement = document.getElementById('count');
       const governorateElement = document.getElementById('governorate');
@@ -798,11 +812,12 @@
       countElement.textContent = totalCount;
       governorateElement.textContent = 'Our Clients';
       governorates.forEach(governorate => {
-        governorate.addEventListener('click', () => {
+        governorate.addEventListener('mouseover', () => {
           const data = governorateData.find(item => item.id === governorate.id);
           if (data) {
-            countElement.textContent = data.count;
+            countUp(countElement, parseInt(countElement.textContent), data.count, 500);
             governorateElement.textContent = governorate.id;
+            // Uncomment and modify below for Arabic names
             // const arabicNames = {
             //   'kafrElsheikh': 'كفر الشيخ',
             //   'Beheira': 'البحيرة',
@@ -812,16 +827,12 @@
             // if (arabicNames[governorate.id]) {
             //   governorateElement.textContent = arabicNames[governorate.id];
             // }
-          } else {
-            console.warn(`No data found for governorate with id: ${governorate.id}`);
           }
         });
-      });
-      document.addEventListener('click', (event) => {
-        if (!event.target.closest('.haveBranch')) {
-          countElement.textContent = totalCount;
+        governorate.addEventListener('mouseout', () => {
+          countUp(countElement, parseInt(countElement.textContent), totalCount, 500);
           governorateElement.textContent = 'Our Clients';
-        }
+        });
       });
     }
     document.addEventListener('DOMContentLoaded', initializeGovernorates);

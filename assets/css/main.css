@@ -7,8 +7,15 @@
 .more-services{
   direction: ltr;
   }
+.about .content ul li {
+  i{
+  right: 0;
+}
+span{
+  margin-right: 40px;
+}
+}
 } */
-
 /* Fonts */
 :root {
   --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
@@ -880,6 +887,34 @@ section,
   padding: 0;
   margin: 20px 0;
 }
+@keyframes floatY {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+}
+.about .floating-shape {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, var(--accent-color) 40%, transparent 70%);
+  top: 10%;
+  left: -75px;
+  border-radius: 50%;
+  opacity: 0.4;
+  animation: floatY 6s ease-in-out infinite;
+  z-index: 0;
+}
+.about .shape2 {
+  width: 100px;
+  height: 100px;
+  top: 80%;
+  left: 95%;
+  animation-delay: 2s;
+}
+
 
 .about ul li {
   position: relative;
@@ -1109,6 +1144,7 @@ section,
   transition: all ease-in-out 0.5s;
   background: color-mix(in srgb, var(--surface-color), transparent 10%);
   padding: 15px;
+  margin-top: 40px;
 }
 
 .products .products-item .products-info h4 {
@@ -1156,9 +1192,11 @@ section,
 .products-details .swiper-slide {
   border-radius: 12px;
   overflow: hidden;
+  position: relative;
 }
 .products-details .products-details-slider img {
   width: 100%;
+  max-height: 100%;
   aspect-ratio: 2/1;
   object-fit: cover;
 }
@@ -1212,7 +1250,6 @@ section,
   background: var(--accent-color);
   color: var(--contrast-color);
 }
-
 .products-details .products-description h2 {
   font-size: 26px;
   font-weight: 700;
@@ -1384,9 +1421,7 @@ main {
   width: 100%;
 }
 
-#service .card:hover {
-  transform: translateY(-4px);
-}
+
 
 #service .overlay {
   position: absolute;
@@ -1400,23 +1435,38 @@ main {
   flex-direction: column;
   justify-content: flex-start; 
   padding: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 #service .card-title {
   font-weight: bold;
   font-size: 1.5rem;
-  color:#d4e5f8;
+  color: #d4e5f8;
   margin-bottom: 10px;
-  padding:10px 10px 0 10px;
+  padding: 10px 10px 0 10px;
 }
 
 #service .card-text {
   font-size: 1rem;
   color: var(--contrast-color);
-  padding:0px 10px 0 10px;
-
+  padding: 0px 10px 0 10px;
 }
 
+#service .card {
+  transition: transform 0.3s ease;
+  position: relative; 
+}
+
+#service .card:hover {
+  transform: translateY(-4px);
+}
+
+#service .card:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -1544,7 +1594,6 @@ main {
 
 .more-services .card {
   background-color: var(--surface-color);
-  color: var(--default-color);
   padding: 30px;
   box-shadow: 0px 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -1575,10 +1624,15 @@ main {
   font-weight: 700;
   margin-top: 28px;
   margin-bottom: 15px;
+  color: var(--default-color);
 }
 
 .more-services .card:hover {
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  background-color:#0b376ac5;
+}
+.more-services .card:hover h3{
+ color: var(--contrast-color);
 }
 
 .more-services .card:hover img {

@@ -1,30 +1,34 @@
-/* .rtlDir{
+/* .rtlDir {
+  *{
   direction: rtl;
-  text-align: right;
+  }
   .hero {
     direction: ltr;
   }
-.more-services{
-  direction: ltr;
+  .hero .carousel-control-prev,
+  .hero .carousel-control-next {
+    transform: rotate(180deg);
   }
-.about .content ul li {
-  i{
-  right: 0;
-}
-span{
-  margin-right: 40px;
-}
-}
-body{
-  font-family: 'Noto Kufi Arabic', sans-serif;
-
-}
-
+  .more-services {
+    direction: ltr;
+  }
+  .about .content ul li {
+    i {
+      right: 0;
+    }
+    span {
+      margin-right: 40px;
+    }
+  }
+  body {
+  font-family: "Readex Pro", sans-serif;
+  }
 } */
 /* Fonts */
 :root {
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
-    "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Inter", sans-serif;
   --nav-font: "Poppins", sans-serif;
 }
@@ -95,7 +99,7 @@ h6 {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  background-color: #25D366;
+  background-color: #25d366;
   color: white;
   width: 50px;
   height: 50px;
@@ -105,7 +109,7 @@ h6 {
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
-  z-index: 1000; 
+  z-index: 1000;
   &:hover {
     transform: scale(1.1);
   }
@@ -201,8 +205,7 @@ h6 {
   border-radius: 50%;
   background: #fff;
   opacity: 0;
-  transition:
-    transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1),
+  transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1),
     opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
   z-index: -1;
   transform: translate(100%, -25%) translate3d(0, 0, 0);
@@ -211,8 +214,7 @@ h6 {
 .custom-btn:hover::before,
 .custom-btn:hover::after {
   opacity: 0.15;
-  transition:
-    transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1),
+  transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1),
     opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
 
@@ -507,7 +509,9 @@ h6 {
   padding: 40px 0 0 0;
   position: relative;
 }
-
+.footer .logo_footer{
+height: 70px;
+}
 .footer h4 {
   font-size: 16px;
   font-weight: 700;
@@ -539,7 +543,8 @@ h6 {
 
 .footer .copyright {
   padding: 25px 0;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .copyright p {
@@ -624,7 +629,8 @@ h6 {
 
 .page-title .heading {
   padding: 120px 0 30px 0;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .page-title .heading h1 {
@@ -703,7 +709,7 @@ section,
   min-height: calc(100dvh - 120px);
   padding: 0;
   margin-top: 60px;
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
   position: relative;
   border-radius: 15px;
 }
@@ -732,18 +738,9 @@ section,
 
 .hero .carousel-item:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
   position: absolute;
   inset: 0;
   z-index: 2;
-  border-radius: 15px;
-}
-
-.hero .carousel-item::before {
-  content: "";
-  background-color: color-mix(in srgb, var(--background-color), transparent 30%);
-  position: absolute;
-  inset: 0;
   border-radius: 15px;
 }
 
@@ -911,28 +908,28 @@ section,
 .shapes span {
   position: absolute;
   top: 10%;
-  left: -8rem;       
-  transform: none;  
-  width: 150px;    
-  height: 150px;    
-  border: 4px solid  rgb(11, 56, 106, 0.188);
+  left: -8rem;
+  transform: none;
+  width: 150px;
+  height: 150px;
+  border: 4px solid rgb(11, 56, 106, 0.188);
   border-radius: 60% 60% 40% 40% / 50% 50% 50% 50%;
   transition: 0.5s;
   animation: rotate 8s linear infinite;
   z-index: 0;
 }
 .shapes span:nth-child(2) {
-  width: 120px;    
-  height: 120px;    
+  width: 120px;
+  height: 120px;
   top: 50px;
   left: calc(-8rem + 1rem);
 }
 
 .shapes span:nth-child(3) {
-  width: 90px;    
-  height: 90px;    
+  width: 90px;
+  height: 90px;
   top: 50px;
-  left: calc(-8rem + 2rem); 
+  left: calc(-8rem + 2rem);
 }
 
 /* .about .floating-shape {
@@ -955,11 +952,11 @@ section,
   animation-delay: 2s;
 } */
 
-
 .about ul li {
   position: relative;
   padding: 15px 0 15px 40px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-weight: 500;
 }
 
 .about ul li:last-child {
@@ -1246,14 +1243,20 @@ section,
   position: relative;
 }
 
-.products-details .products-details-slider .swiper-pagination .swiper-pagination-bullet {
+.products-details
+  .products-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
   opacity: 1;
 }
 
-.products-details .products-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.products-details
+  .products-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
 .products-details .products-info .specifications {
@@ -1273,7 +1276,8 @@ section,
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 .products-details .products-info ul {
@@ -1317,7 +1321,8 @@ section,
 .service-details .service-box h4 {
   font-size: 20px;
   font-weight: 700;
-  border-bottom: 2px solid color-mix(in srgb, var(--default-color), transparent 92%);
+  border-bottom: 2px solid
+    color-mix(in srgb, var(--default-color), transparent 92%);
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
@@ -1366,7 +1371,8 @@ section,
   align-items: center;
   padding: 10px 0;
   transition: 0.3s;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .service-details .download-catalog a:first-child {
@@ -1461,8 +1467,6 @@ main {
   width: 100%;
 }
 
-
-
 #service .overlay {
   position: absolute;
   top: 0;
@@ -1473,7 +1477,7 @@ main {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   padding: 10px;
   opacity: 0;
   visibility: hidden;
@@ -1496,7 +1500,7 @@ main {
 
 #service .card {
   transition: transform 0.3s ease;
-  position: relative; 
+  position: relative;
 }
 
 #service .card:hover {
@@ -1515,13 +1519,8 @@ main {
   }
 }
 
-
 .animated-bg {
-  background: linear-gradient(
-    rgb(11, 56, 106, 0.77),
-    rgb(11, 56, 106, 0.8)
-    ),
-    
+  background: linear-gradient(rgb(11, 56, 106, 0.77), rgb(11, 56, 106, 0.8)),
     url("../img/about\ bg.png");
   background-size: 300%;
   background-position: center;
@@ -1561,7 +1560,7 @@ main {
   font-size: 36px;
   transition: ease-in-out 0.3s;
 }
-.services h2{
+.services h2 {
   color: var(--nav-dropdown-background-color);
 }
 
@@ -1699,10 +1698,10 @@ main {
 
 .more-services .card:hover {
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
-  background-color:#0b376ac5;
+  background-color: #0b376ac5;
 }
-.more-services .card:hover h3{
- color: var(--contrast-color);
+.more-services .card:hover h3 {
+  color: var(--contrast-color);
 }
 
 .more-services .card:hover img {
@@ -1753,9 +1752,7 @@ main {
   border: none;
   border-radius: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition:
-    transform 0.5s ease,
-    box-shadow 0.3s ease;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
 
 .events .card:hover {
@@ -1864,14 +1861,13 @@ main {
 
 .contact .contact-form,
 .apply .apply-form {
-  background: #F2F1FA ;
+  background: #f2f1fa;
   padding: 30px;
   height: 100%;
   border-radius: 16px;
-
 }
-.contact-form{
-  background: #F2F1FA !important;
+.contact-form {
+  background: #f2f1fa !important;
 }
 .contact .contact-form label {
   color: var(--accent-color);
@@ -2057,7 +2053,8 @@ main {
   display: block;
   line-height: 1;
   padding: 8px 0 8px 15px;
-  border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
+  border-left: 3px solid
+    color-mix(in srgb, var(--default-color), transparent 70%);
   margin: 20px 0;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   transition: 0.3s;
@@ -2233,9 +2230,7 @@ main {
   border-radius: 8px;
   padding: 0;
   box-shadow: 0px 9px 20px 0px rgb(120 120 120 / 29%);
-  transition:
-    opacity 300ms ease-in-out,
-    display 300ms allow-discrete,
+  transition: opacity 300ms ease-in-out, display 300ms allow-discrete,
     transform 300ms ease-in-out;
   opacity: 0;
   transform: scale(0.5);
@@ -2335,15 +2330,13 @@ main {
 
 /* Card animations */
 .card {
-  transition:
-    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow:
-    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
@@ -2505,9 +2498,7 @@ main {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  transition:
-    width 0.6s ease-out,
-    height 0.6s ease-out;
+  transition: width 0.6s ease-out, height 0.6s ease-out;
 }
 
 .read-more:hover:before,
@@ -2714,9 +2705,7 @@ html {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  transition:
-    width 0.6s ease-out,
-    height 0.6s ease-out;
+  transition: width 0.6s ease-out, height 0.6s ease-out;
 }
 
 .read-more:hover:before,
@@ -2911,9 +2900,7 @@ section:nth-child(even) {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  transition:
-    width 0.6s ease-out,
-    height 0.6s ease-out;
+  transition: width 0.6s ease-out, height 0.6s ease-out;
 }
 
 .btn:hover::after {
@@ -3088,9 +3075,10 @@ section:nth-child(even) {
     font-weight: bold;
   }
 }
-
-
-.mapFrame{
+.Plus{
+  font-size: 20px;
+}
+.mapFrame {
   width: 100%;
   height: 100%;
   min-height: 400px;

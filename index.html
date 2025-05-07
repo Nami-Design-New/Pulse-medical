@@ -25,7 +25,7 @@
   <link href="assets/css/glightbox.min.css" rel="stylesheet" />
   <link href="assets/css/all.min.css" rel="stylesheet" />
   <link href="assets/css/swiper-bundle.min.css" rel="stylesheet" />
-  <link href="assets/css/main.css" rel="stylesheet" />
+  <link href="assets/css/main.css?v=8" rel="stylesheet" />
 </head>
 
 <body class="index-page rtlDir">
@@ -109,7 +109,7 @@
   <!-- main -->
   <main class="main">
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <section id="hero" class="hero section ">
       <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
         <div class="carousel-item active">
           <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="" />
@@ -270,8 +270,8 @@
           <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center flex-column" data-aos="fade-up"
             data-aos-delay="100">
             <div class="clientsCount">
+              <div class="num"><span class="Plus">+</span>  <span id="count">0</span> Client </div>
 
-              <div class="num"> + <span id="count"> 2400 </span> Client </div>
               <div id="governorate"> Our Clients </div>
             </div>
             <h3>Our devices reached to each district in Egypt</h3>
@@ -562,7 +562,7 @@
                   veniam ipsum anim magna sunt elit fore quem dolore labore
                   illum veniam.
                 </p>
-                <div class="profile mt-auto">
+                <div class="profile ">
                   <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
                   <h3>Matt Brandon</h3>
                   <h4>Freelancer</h4>
@@ -582,7 +582,7 @@
                   veniam ipsum anim magna sunt elit fore quem dolore labore
                   illum veniam.
                 </p>
-                <div class="profile mt-auto">
+                <div class="profile ">
                   <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
                   <h3>Matt Brandon</h3>
                   <h4>Freelancer</h4>
@@ -602,7 +602,7 @@
                   veniam ipsum anim magna sunt elit fore quem dolore labore
                   illum veniam.
                 </p>
-                <div class="profile mt-auto">
+                <div class="profile ">
                   <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
                   <h3>Matt Brandon</h3>
                   <h4>Freelancer</h4>
@@ -622,7 +622,7 @@
                   veniam ipsum anim magna sunt elit fore quem dolore labore
                   illum veniam.
                 </p>
-                <div class="profile mt-auto">
+                <div class="profile ">
                   <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
                   <h3>Matt Brandon</h3>
                   <h4>Freelancer</h4>
@@ -642,7 +642,7 @@
                   sunt culpa nulla illum cillum fugiat legam esse veniam culpa
                   fore nisi cillum quid.
                 </p>
-                <div class="profile mt-auto">
+                <div class="profile ">
                   <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
                   <h3>John Larson</h3>
                   <h4>Entrepreneur</h4>
@@ -730,11 +730,13 @@
   <footer id="footer" class="footer light-background">
     <div class="container">
       <div class="row gy-3">
-        <div class="col-lg-3 col-md-6 d-flex">
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-start">
           <div>
-            <img src="assets/img/logo.png" alt="" height="70px" />
+            <img src="assets/img/logo.png" alt="" class="logo_footer" />
+            <p class="mt-3">Your trusted partner in aesthetic solutions across Egypt.</p>
           </div>
         </div>
+        
         <div class="col-lg-3 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
@@ -788,7 +790,7 @@
   <script src="assets/js/swiper-bundle.min.js"></script>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script>
+  <!-- <script>
     const governorateData = [
       { id: 'kafrElsheikh', count: 1500 },
       { id: 'Beheira', count: 2000 },
@@ -844,7 +846,37 @@
       });
     }
     document.addEventListener('DOMContentLoaded', initializeGovernorates);
+  </script> -->
+  <script>
+    // Function to animate the counter
+    function animateCounter(id, target, duration) {
+  const counter = document.getElementById(id);
+  let start = 0;
+  const stepTime = Math.abs(Math.floor(duration / target));
+  const timer = setInterval(() => {
+    start++;
+    counter.innerText = start.toLocaleString(); 
+    if (start === target) {
+      clearInterval(timer);
+    }
+  }, stepTime);
+}
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateCounter("count", 1500, 500); 
+      observer.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.5 
+});
+
+observer.observe(document.getElementById("location"));
+
   </script>
+  
 </body>
 
 </html>

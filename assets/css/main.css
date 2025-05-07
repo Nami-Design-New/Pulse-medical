@@ -15,6 +15,11 @@ span{
   margin-right: 40px;
 }
 }
+body{
+  font-family: 'Noto Kufi Arabic', sans-serif;
+
+}
+
 } */
 /* Fonts */
 :root {
@@ -887,15 +892,50 @@ section,
   padding: 0;
   margin: 20px 0;
 }
-@keyframes floatY {
+/* @keyframes floatY {
   0%, 100% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(25px);
   }
+} */
+@keyframes rotate {
+  0% {
+    transform: translate(50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(50%, -50%) rotate(360deg);
+  }
 }
-.about .floating-shape {
+.shapes span {
+  position: absolute;
+  top: 10%;
+  left: -8rem;       
+  transform: none;  
+  width: 150px;    
+  height: 150px;    
+  border: 4px solid  rgb(11, 56, 106, 0.188);
+  border-radius: 60% 60% 40% 40% / 50% 50% 50% 50%;
+  transition: 0.5s;
+  animation: rotate 8s linear infinite;
+  z-index: 0;
+}
+.shapes span:nth-child(2) {
+  width: 120px;    
+  height: 120px;    
+  top: 50px;
+  left: calc(-8rem + 1rem);
+}
+
+.shapes span:nth-child(3) {
+  width: 90px;    
+  height: 90px;    
+  top: 50px;
+  left: calc(-8rem + 2rem); 
+}
+
+/* .about .floating-shape {
   position: absolute;
   width: 150px;
   height: 150px;
@@ -913,7 +953,7 @@ section,
   top: 80%;
   left: 95%;
   animation-delay: 2s;
-}
+} */
 
 
 .about ul li {
@@ -1476,6 +1516,33 @@ main {
 }
 
 
+.animated-bg {
+  background: linear-gradient(
+    rgb(11, 56, 106, 0.77),
+    rgb(11, 56, 106, 0.8)
+    ),
+    
+    url("../img/about\ bg.png");
+  background-size: 300%;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: animateBg 80s linear infinite;
+  color: #fff;
+}
+
+/* Keyframes for animation */
+@keyframes animateBg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .services .service-item:before {
   content: "";
   position: absolute;
@@ -1494,6 +1561,9 @@ main {
   font-size: 36px;
   transition: ease-in-out 0.3s;
 }
+.services h2{
+  color: var(--nav-dropdown-background-color);
+}
 
 .services .service-item h4 {
   font-weight: 700;
@@ -1505,8 +1575,8 @@ main {
   color: var(--heading-color);
   transition: ease-in-out 0.3s;
 }
-
 .services .service-item p {
+  color: var(--default-color);
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
